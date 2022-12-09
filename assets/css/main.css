@@ -1,7 +1,7 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Segoe UI", Roboto;
+  --font-primary: 'Dancing Script', cursive;
   --font-secondary: "Inter", sans-serif;
 }
 
@@ -50,6 +50,7 @@ input:focus {
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  font-family: grand
 }
 
 a {
@@ -387,6 +388,22 @@ section {
   scroll-margin-top: 90px;
 }
 
+.btn-book-a-table,
+.btn-book-a-table:focus {
+  font-size: 14px;
+  color: #fff;
+  background: var(--color-primary);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-book-a-table:hover,
+.btn-book-a-table:focus:hover {
+  color: #fff;
+  background: rgba(206, 18, 18, 0.8);
+}
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -653,6 +670,13 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+
+  padding: 00px 10px 0px 10px;
+  background-color: var(--color-default);
+  color: white;
+}
+
 .about .about-img {
   min-height: 500px;
 }
@@ -805,6 +829,46 @@ section {
     opacity: 0;
   }
 }
+.about-us-gallery-container {
+  height: 90%;
+  width: 100%;
+}
+
+.about-us-gallery {
+  padding: 00px 10px 0px 10px;
+  background-color: var(--color-default);
+}
+
+.about-us-gallery .about-us-swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.about-us-gallery .about-us-swiper-pagination .about-us-swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d1d1d7;
+  opacity: 1;
+}
+
+.about-us-gallery .about-us-swiper-pagination .about-us-swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.about-us-gallery .about-us-swiper-slide-active {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .about-us-gallery .about-us-swiper-wrapper {
+    padding: 40px 0;
+  }
+
+  .about-us-gallery .about-us-swiper-slide-active {
+    text-align: center;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Why Us Section
@@ -1056,6 +1120,13 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials {
+
+  padding: 00px 10px 0px 10px;
+  background-color: var(--color-default);
+  color: white;
+}
+
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1455,12 +1526,8 @@ section {
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
-.gallery-container {
-  height: 90%;
-  width: 100%;
-}
-
 .gallery {
+  overflow: hidden;
   padding: 00px 10px 0px 10px;
   background-color: var(--color-default);
 }
@@ -1491,9 +1558,14 @@ section {
   }
 
   .gallery .swiper-slide-active {
-    text-align: center;
+    border: 6px solid var(--color-primary);
+    padding: 4px;
+    background: #fff;
+    z-index: 1;
+    transform: scale(1.2);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Contact Section

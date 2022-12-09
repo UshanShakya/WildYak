@@ -212,7 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-
   /**
    * Gallery Slider
    */
@@ -236,16 +235,17 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20
       },
       640: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 20
       },
       992: {
-        slidesPerView: 1,
+        slidesPerView: 5,
         spaceBetween: 20
       }
     }
   });
 
+  
   /**
    * Animation on scroll function and init
    */
